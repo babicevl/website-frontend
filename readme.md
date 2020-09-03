@@ -56,16 +56,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**blauw** -kies uit zwart, rood óf blauw-
+**je startniveau** -kies uit zwart, rood of blauw-
+**je startniveau** -blauw-
 
-**surface plane** -kies uit responsive óf surface plane-
+**je focus** -lies uit responsive of surface plane-
+**je focus** -responsive-
 
-**https://www.oba.nl/?gclid=CjwKCAjw4rf6BRAvEiwAn2Q76pkfKcPtes6xQ1f2xtVho1wgfLPEu7i6lx-uOzssE2mVP87NqdkJ3hoCQyUQAvD_BwE** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**je opdracht** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**je opdracht** -https://www.vice.com/en_us/broadly-
+
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken]
+![broadly](images/broadlyculture.png)
+![broadly](images/broadlyhome.png)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdownschets.frontend.png)
