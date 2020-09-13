@@ -1,0 +1,57 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+  background-color: #035eda; 
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul{
+	font-family: avenir;
+	color: white;
+	font-size: calc(1vw + 1vh + .5vmin);
+	list-style: none;
+	/*display:flex;
+	flex-wrap:wrap;*/
+
+}
+
+.logo{
+	display: block;
+	margin:0px auto; 
+	height: 100px;
+	width: auto;
+
+  }
+
+/*h1{
+	color: white;
+	font-family: 'bely', serif;
+}
+*/
+
+.home{
+	height: auto;
+	width: 200px;
+	position: absolute;
+	right:0;
+	/*display:flex;
+  	justify-content:flex-end;*/
+}
+
+.pallet{
+	height: auto;
+	width: 100px;
+}
+
+.content{
+	height: auto;
+	width: 100px;
+}
