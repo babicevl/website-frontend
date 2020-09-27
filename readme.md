@@ -49,8 +49,6 @@ In week 3 begon ik met de website. Doordat ik mijn style guide in dezelfde stijl
 
 **Screenshot(s):**
 
-![styleguide](images/styleguide1.png)
-![styleguide](images/website1.png)
 
 ### Agenda voor meeting
 

@@ -7,6 +7,7 @@ body {
 background-color: #035eda;
 margin: 0;
 width: 100%;
+/*background: url(header.jpg);*/
 }
 img {
 width: 100%;
@@ -17,6 +18,44 @@ font-family: avenir;
 color: white;
 font-size: calc(1vw + 1vh + .5vmin);
 list-style: none;
+}
+h1{
+color: white;
+font-family: bely-display, sans-serif;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+}
+h2{
+color: white;
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+}
+p{
+color: white;
+font-family: 'avenir';
+text-align:center;
+}
+@media (min-width:45em) {
+body{
+}
+main{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+@media (min-width:75em){
+body{
+}
+main{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+main > section: last-of-type{
+grid-column: span 3;
 }
 .logo{
 display: block;
@@ -38,17 +77,8 @@ width: 100px;
 height: auto;
 width: 100px;
 }
-/*broadly homepagina*/
-h5{
+.history{
 color: white;
-}
-p{
-color: white;
-font-family: 'lelo, sans-serif'
-}
-h2{
-color: white;
-font-family: bely, serif;
-font-weight: 400;
-font-style: normal;
+font-family: 'avenir';
+text-align: left;
 }
