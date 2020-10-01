@@ -30,7 +30,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
+In week 4 heb ik alleen de oefeningen gemaakt voor de lessen omdat de andere vakken allemaal een oplevering hadden die 33% meetelde met het eindcijfer. 
 
+In week 5 ben ik hard aan de slag gegaan met mijn tweede pagina en het verbeteren van de eerste pagina. Ik liep tegen een aantal kleine dingen aan zoals de nav bar die niet helemaal lukte. Ook waren de grids op pagina 2 lastig. 
+
+![broadly](images/website2.png) 
+![broadly](images/website2.png) 
+![astrology](images/astro1.png) 
+![astrology](images/astro2.png) 
 
 
 
@@ -45,9 +52,9 @@ In week 2 zette ik mijn style guide in html. Ik merkte dat ik veel basis dingen 
 In week 3 begon ik met de website. Doordat ik mijn style guide in dezelfde stijl als mijn website heb gedaan, wist ik al hoe in grote lijnen mijn website opgebouwd moest worden. Ik heb alleen moeite met de positionering van de afbeeldingen en mijn lettertype in html en css zetten.
 
 
-
-
 **Screenshot(s):**
+
+![broadly](images/website1.png) 
 
 
 ### Agenda voor meeting
