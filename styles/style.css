@@ -12,12 +12,46 @@ width: 100%;
 img {
 width: 100%;
 height: auto;
+
+}
+/*nav{
+position:sticky;
+}*/
+nav {
+position: sticky;
+font-size: 3em;
+font-family: serif;
+font-family: 'avenir', serif;
+}
+nav ul {
+padding: 10px;
+padding-top: 0px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+list-style: none;
+color: white;
 }
 ul{
 font-family: avenir;
 color: white;
 font-size: calc(1vw + 1vh + .5vmin);
 list-style: none;
+color: white;
+}
+nav ul li {
+padding: 10px;
+padding-top: 0px;
+text-align: left;
+display: flex;
+justify-content: space-around;
+list-style: none;
+display: inline-block;
+color: white;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
 }
 h1{
 color: white;
@@ -26,17 +60,24 @@ font-weight: 600;
 font-style: normal;
 text-align: center;
 }
-h2{
+h2 {
 color: white;
 font-family: bely-display, sans-serif;
 font-weight: 400;
 font-style: normal;
 text-align: center;
+margin-bottom: 1em;
 }
 p{
 color: white;
 font-family: 'avenir';
 text-align:center;
+margin: 0em 2em 0em 2em;
+}
+a{
+text-decoration: none;
+color: white;
+font-weight: 600;
 }
 @media (min-width:45em) {
 body{
@@ -54,31 +95,90 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 }
 }
-main > section: last-of-type{
-grid-column: span 3;
+.headerpic{
+overflow: hidden;
+/*margin-bottom: 40px;*/
+margin: auto auto 2em auto;
+max-width: calc(100% - 0px);
 }
-.logo{
+.headertext{
+border: 3px solid #FFC359;
+padding: 20px;
+margin-bottom: 30px;
+text-align: center;
+}
+.astrologypic{
+align-self: flex-start;
 display: block;
-margin:0px auto;
-height: 100px;
-width: auto;
-}
-.home{
-height: auto;
-width: 200px;
-position: absolute;
-right:0;
-}
-.pallet{
-height: auto;
-width: 100px;
-}
-.content{
-height: auto;
-width: 100px;
+margin: 0 auto 20px;
+width: 60%;
 }
 .history{
 color: white;
 font-family: 'avenir';
 text-align: left;
+display: block;
+margin-bottom: 1em;
+
+}
+/*horoscopes*/
+.blue{
+background-color: white;
+}
+.blue h1{
+color: black;
+font-family: "helvetica neue";
+font-weight: 500;
+font-size: 1.5em;
+}
+.blue ul{
+color: black;
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin: 0 auto;
+max-width: 1600px;
+width: 100%;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+display: flex;
+flex-flow: column;
+width: 100%;
+}
+.blue img{
+padding:2em;
+}
+.blue h2{
+color:black;
+text-align: left;
+}
+.blue p{
+color:black;
+text-align: left;
+}
+.blue section{
+display: inline-block;
+border-radius: 2em;
+}
+/*breakpoints*/
+@media (min-width:40em) {
+main {
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-gap:1em;
+padding:1rem
+}
+main h2 {
+grid-column: 1 / -1;
+}
+main article {
+margin-bottom: 0;
+}
+}
+@media (min-width:60em) {
+main {
+grid-template-columns:  1fr 1fr 1fr;
+}
+article:first-of-type {
+grid-column: span 2;
+}
 }
