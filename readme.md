@@ -34,12 +34,23 @@ In week 4 heb ik alleen de oefeningen gemaakt voor de lessen omdat de andere vak
 
 In week 5 ben ik hard aan de slag gegaan met mijn tweede pagina en het verbeteren van de eerste pagina. Ik liep tegen een aantal kleine dingen aan zoals de nav bar die niet helemaal lukte. Ook waren de grids op pagina 2 lastig. 
 
+**Screenshot(s):**
+
 ![broadly](images/website2.png) 
 ![broadly](images/website2.png) 
 ![astrology](images/astro1.png) 
 ![astrology](images/astro2.png) 
 
 
+### Agenda voor meeting
+
+Broadly:
+Afbeelding moet naar de andere kant van pagina
+Content onder menu laat zich niet zien
+Link moet center onder tekst 
+
+Horoscope:
+p staat niet in het midden in sectionjb 
 
 ## Voortgang 1 (week 3)
 
@@ -59,11 +70,16 @@ In week 3 begon ik met de website. Doordat ik mijn style guide in dezelfde stijl
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+gebruik liefst geen px maar em
+h2 + p wordt section
+boven eerste p een h...
+h1 titel pagina maken
+menu = position:fixed;
+alt=visual interface background img 
 
 
 
