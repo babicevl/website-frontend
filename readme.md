@@ -24,8 +24,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
+In week 5 ben ik aan de slag gegaan met de feedback die ik kreeg in voortgang 2.
+
+**Screenshot(s):**
+
+![broadly](images/website4.png) 
+![broadly](images/website5.png) 
+![astrology](images/astro3.png) 
+![astrology](images/astro4.png) 
 
 
+### Agenda voor meeting
+
+Content onder menu laat zich niet zien
+Moeite met animatie begrijpen
 
 
 ## Voortgang 2 (week 5)
@@ -37,7 +49,7 @@ In week 5 ben ik hard aan de slag gegaan met mijn tweede pagina en het verbetere
 **Screenshot(s):**
 
 ![broadly](images/website2.png) 
-![broadly](images/website2.png) 
+![broadly](images/website3.png) 
 ![astrology](images/astro1.png) 
 ![astrology](images/astro2.png) 
 
@@ -46,11 +58,19 @@ In week 5 ben ik hard aan de slag gegaan met mijn tweede pagina en het verbetere
 
 Broadly:
 Afbeelding moet naar de andere kant van pagina
-Content onder menu laat zich niet zien
 Link moet center onder tekst 
 
 Horoscope:
-p staat niet in het midden in sectionjb 
+p staat niet in het midden in section
+
+
+### Verslag van meeting
+
+Time element op data zetten in horoscope
+Margin op p uit in horoscope grid
+h3 verwijderen in a
+
+
 
 ## Voortgang 1 (week 3)
 

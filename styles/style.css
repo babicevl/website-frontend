@@ -1,218 +1,284 @@
-/* CSS Document */
-*, *::after, *::before {
-box-sizing:border-box;
+	/* CSS Document */
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
+
+
 /*styleguide*/
+
 body {
-background-color: #035eda;
-margin: 0;
-width: 100%;
-/*background: url(header.jpg);*/
+	background-color: #035eda;
+	margin: 0;
+	width: 100%;
+	/*background: url(header.jpg);*/
 }
+
 img {
-width: 100%;
-height: auto;
-
+	width: 100%;
+	height: auto;
 }
-/*nav{
-position:sticky;
-}*/
+
+
 nav {
-font-size: 3em;
-font-family: 'avenir', serif;
-text-align: center;
-background: #035EDA;
-top: 0;
-bottom: 2em;
-display: flex;
-height: 1em;
-left: 0;
-position: fixed;
-right: 0;
-z-index: 3;
+	font-size: 3em;
+	font-family: 'avenir', serif;
+	text-align: center;
+	background: #035EDA;
+	top: 0;
+	bottom: 2em;
+	display: flex;
+	height: 1em;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 3;
 }
+
 nav ul {
-padding: 1em;
-padding-top: 0;
-display: flex;
-justify-content: center;	
-color: white;
+	padding: 1em;
+	padding-top: 0;
+	display: flex;
+	justify-content: center;
+	color: white;
 }
-ul{
-font-family: avenir;
-color: white;
-font-size: calc(1vw + 1vh + .5vmin);
+
+ul {
+	font-family: avenir;
+	color: white;
+	font-size: calc(1vw + 1vh + .5vmin);
+	color: black;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	width: 100%;
 }
+
 nav ul li {
-padding: 1em;
-padding-top: 0;
-display: flex;
-list-style: none;
+	padding: 1em;
+	padding-top: 0;
+	display: flex;
+	list-style: none;
 }
+
 nav ul li a {
-list-style: none;
-text-decoration: none;
-color: white;
+	list-style: none;
+	text-decoration: none;
+	color: white;
 }
-h1{
-color: white;
-font-family: bely-display, sans-serif;
-font-weight: 600;
-font-style: normal;
-text-align: center;
+
+a { 
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
 }
+
+a:visited {
+  font-weight: normal;
+ 
+}
+
+a:hover {
+  text-decoration: underline;
+   color: rgb(209,126,200	);
+}
+
+a:active {
+  color:#FFC359;
+  text-decoration:underline;
+}
+
+h1 {
+	color: white;
+	font-family: bely-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	text-align: center;
+}
+
 h2 {
-color: white;
-font-family: bely-display, sans-serif;
-font-weight: 400;
-font-style: normal;
-text-align: center;
-margin-bottom: 1em;
-}
-p{
-color: white;
-font-family: 'avenir';
-text-align: center;
-margin: 0em 2em 0em 2em;
-}
-h3 a{
-color: white;
-font-weight: 600;
-font-family: 'avenir';
-text-align:center;
-align-items: center;
-}
-.headerpic{
-overflow: hidden;
-margin: auto auto 2em auto;
-max-width: calc(100% - 0px);
-}
-.headertext{
-border: 0.25em solid #FFC359;
-padding: 1em;
-margin-bottom: 2em;
-margin-top: 2em;
-text-align: center;
-}
-.astrologypic{
-align-self: flex-start;
-display: block;
-margin: 0 auto 20px;
-width: 60%;
+	color: white;
+	font-family: bely-display, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	margin-bottom: 1em;
 }
 
-.history{
-color: white;
-font-family: 'avenir';
-text-align: left;
-display: block;
-margin-bottom: 1em;
+p {
+	color: white;
+	font-family: 'avenir';
+	margin: 0em 2em 0em 2em;
+	display:flex;
+	justify-content: flex-start;
+}
 
+h3 a {
+	color: white;
+	font-weight: 600;
+	font-family: 'avenir';
+	text-align: center;
+	align-items: center;
+}
+
+.headerpic {
+	overflow: hidden;
+	margin: auto auto 2em auto;
+	max-width: calc(100% - 0px);
+}
+
+.headertext {
+	border: 0.25em solid #FFC359;
+	padding: 1em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.astrologypic {
+	align-self: flex-start;
+	display: block;
+	margin:auto;
+	width: 60%;
+	display:flex;
+	justify-content: flex-end;
+}
+
+.history {
+	color: white;
+	font-family: 'avenir';
+	text-align: left;
+	display: block;
+	margin-bottom: 1em;
+}
+
+section .astrolink {
+	font-weight: bold;
+	font-family: 'avenir';
+  	text-decoration: underline;
+  	color: #ffffff;
+  	margin-left: 2em;	
 }
 /*horoscopes*/
-.blue{
-background-color: white;
-}
-.blue nav {
-font-size: 3em;
-font-family: serif;
-font-family: 'avenir', serif;
-align-items: center;
-background: #000000;
-top: 0;
-bottom: 2em;
-display: flex;
-height: 40px;
-left: 0;
-position: fixed;
-right: 0;
-z-index: 3;
-}
-.blue nav ul li {
-padding: 1em;
-padding-top: 1em;
-text-align: center;
-display: flex;
-flex: auto;
-}
-.nav{
-font-family: avenir;
-color: white;
-font-size: calc(1vw + 1vh + .5vmin);
-text-align: center;	
-}
-.blue li{
-list-style-type: none;
-}
-.blue h1{
-color: black;
-font-family: "helvetica neue";
-font-weight: 500;
-font-size: 1.5em;
-}
-.blue ul{
-color: black;
-margin: 0;
-padding: 0;
-margin: 0 auto;
-width: 100%;
-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-display: flex;
-width: 100%;
-}
-.blue h2{
-color:black;
-text-align: left;
-font-weight: 600;
-}
-.blue p{
-color:black;
-text-align: left;
-}
-.blue section{
-display: flex;
-border-radius: 2em;
-border-bottom: none;
-border-right: 1px solid rgba(0, 0, 0, 0.1);
-width: 33.33333%;
-flex-flow: column;
-width: 100%;
+
+.blue {
+	background-color: white;
 }
 
-}
-.blue section{
+.blue nav {
+	font-size: 3em;
+	font-family: serif;
+	font-family: 'avenir', serif;
+	align-items: center;
+	background: #000000;
+	top: 0;
+	bottom: 2em;
 	display: flex;
-    flex-flow: row;
-    height: 100%;
-    position: relative;
-    width: 100%;
+	height: 40px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 3;
 }
+
+.blue nav ul li {
+	padding: 1em;
+	padding-top: 1em;
+	text-align: center;
+	display: flex;
+	flex: auto;
+}
+
+.nav {
+	font-family: avenir;
+	color: white;
+	font-size: calc(1vw + 1vh + .5vmin);
+	text-align: center;
+}
+
+.blue li {
+	list-style-type: none;
+}
+
+.blue h1 {
+	color: black;
+	font-family: "helvetica neue";
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+.blue ul {
+	color: black;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	width: 100%;
+}
+
+.blue h2 {
+	color: black;
+	text-align: left;
+	font-weight: 600;
+}
+
+.blue p {
+	color: black;
+	text-align: left;
+}
+
+.blue section {
+	display: flex;
+	border-radius: 2em;
+	border-bottom: none;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	width: 33.33333%;
+	flex-flow: column;
+	width: 100%;
+}
+
+
+}
+.blue section {
+	display: flex;
+	flex-flow: row;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
 /*breakpoints*/
 @media (min-width:40em) {
-.astrog {
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-gap:1em;
-padding:1rem;
-}
+	.astrog {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		padding: 1rem;
+	}
 }
 @media (min-width:40em) {
-.astro {
-display:grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap:1em;
-padding:1rem
-}
+	.astro {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1em;
+		padding: 1rem
+	}
 }
 @media (min-width:60em) {
-main {
-grid-template-columns:  1fr 1fr 1fr;
-}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 @media (min-width: 700px) {
-.blue {
-flex-flow: column;
-flex-direction: column;
- flex-wrap: initial;
-width: 100%;
-}
+	.blue {
+		flex-flow: column;
+		flex-direction: column;
+		flex-wrap: initial;
+		width: 100%;
+	}
