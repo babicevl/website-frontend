@@ -21,7 +21,7 @@ console.log(button);
 // eventlistener
 
 addEventListener('click', likeButton);
-	console.log("button was clicked");
+	console.log("button is aangeklikt");
 
 
 

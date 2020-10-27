@@ -6,19 +6,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://css-tricks.com/
+2. https://www.w3schools.com/
 3. -...-
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik had heel veel moeite met het responsive maken van beide header afbeeldingen en de columns op pagina twee (astrology). Ik heb 3 klasgenootjes om hulp gevraagd en uiteindelijk is dat gelukt. De positionering en grids op de homepagina van de  artikels met foto's heading en p waren lastig goed in een grid te zetten maar dat is ook gelukt. Ik had veel moeite met deze opdracht en heb veel hulp gevraagd. Het is zeker niet perfect maar met mijn blauwe piste en lastige site ben ik er toch trots op!
 
 **Screenshot(s):**
+![broadly](images/websitemobiel6.png) 
+![broadly](images/websitemobiel7.png)
+![broadly](images/websitedesktop8.png)
+![broadly](images/websitedesktop9.png)
+![broadly](images/astromobiel5.png) 
+![astrology](images/astrodesktop6.png) 
 
--screenshot(s) van je eindresultaat-
 
 
 
