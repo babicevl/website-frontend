@@ -1,19 +1,17 @@
 // JavaScript Document
 
-var button = document.querySelector("button");
-var hart = document.querySelector("div");
+var button = document.querySelector('original');
+var hart = document.querySelector('hartje');
 let btn = document.querySelector('button');
 let classObj = {
   original: 'large',
-  // small: 'medium',
-  // medium: 'large',
   large: 'original'
 }
 
 // function
 
 function likeButton () {
-	hart.classList.toggle ("original");
+	hart.classList.toggle ('original');
 }
 
 console.log(button);
