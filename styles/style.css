@@ -27,7 +27,7 @@ div {
 
 /*nav*/
 
-nav {
+.home nav {
 	display: flex;
 	font-family: 'avenir', serif;
 	align-items: center;
@@ -37,9 +37,9 @@ nav {
 	display: flex;
 	height:2.188em;
 	left: 0;
-	position: sticky;
+	position: fixed;
 	right: 0em;
-	z-index: 3;
+	z-index: 2;
 	overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ nav {
 	flex: auto;
 }
 
-span{
+.home nav ul span{
 
 	color: white;
     display: inline-block;
@@ -114,10 +114,9 @@ a:active {
 .headertext {
 	border: 0.25em solid #ffc359;
 	padding: 1em;
-	margin-bottom: 1em;
-	margin-top: 4em;
+	margin-bottom: 3em;
+	margin-top: 5em;
 	text-align: center;
-	overflow: hidden;
 }
 
 .home h1 {
@@ -196,11 +195,12 @@ p {
 	font-family: 'avenir';
 	margin: 0em 2em 0em 2em;
 	justify-content: flex-start;
-	font-size: 2.2vw;
+	/*font-size: 2.2vw;*/
 }
 
 section .astrolink {
 	font-size: 2.2vw;
+	margin-left: 1em;
 	font-weight: bold;
 	font-family: 'avenir';
 	text-decoration: underline;
@@ -235,10 +235,10 @@ section .astrolink {
 	background: #000000;
 	top: 0;
 	bottom: 1.5em;
-	/*display: flex;*/
+	display: flex;
 	height:2.188em;
 	left: 0;
-/*	position: fixed;*/
+	position: fixed;
 	right: 0;
 	z-index: 3;
 	overflow: hidden;
@@ -247,7 +247,7 @@ section .astrolink {
 .blue nav ul {
 	padding: 1em;
 	padding-top: 0;
-	/*display: flex;*/
+	display: flex;
 	justify-content: center;
 	width: auto;
 	overflow: hidden;
@@ -337,7 +337,7 @@ button:active {
 }
 
 /*kloppend effect*/
-.hartje {
+.kloppen .hartje {
   	float: right;
     align-content: flex-end;
     animation-name: original;
@@ -346,7 +346,7 @@ button:active {
 
 
 
-  @keyframes .hartje {
+  @keyframes original {
       0% {
           transform: scale(1);
       }
@@ -423,17 +423,46 @@ time {
 	display: flex;
 }
 
-.astro section img {
+/*.astro section img {
 	width: 100%;
 	object-fit: cover;
     min-width: 9.375em;
     max-width: 15.625em;
+}*/
+
+/*daily horoscopes page*/
+.dailyzodiacpic{
+	display: grid;
 }
+
+.contentdaily {
+	grid-area: .contentdaily;
+	display: grid;
+}
+
+.blockaside{
+	grid-area: .blokaside;
+	padding-bottom: 80px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 20%;
+}
+
+/*aside{
+	width: 100%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    align-items: right;
+    margin-left:auto; 
+    margin-right:0
+}*/
 
 
 /*footer home*/
 
-  footer {
+  footer nav {
       display: inline-block;
       width: 100%;
       background-color: #035eda;
@@ -446,19 +475,20 @@ time {
 
 /*breakpoints broadly*/
 
-@media (min-width: 700px){
+@media (min-width: 0em){
 .home nav {
     background: linear-gradient(to bottom, rgba(3,94,218,1) 0%,rgba(3,94,218,0) 100%);
     bottom: auto;
     box-shadow: none;
-    height: 80px;
-    padding: 0 20px;
+    height: auto;
+    padding: 0 1.25em;
     top: 0;
+    position: fixed;
 
 }
 }
 
-@media (min-width: 45em){
+@media (min-width: 0em){
 span {
     display: inline-block;
     top: 0;
@@ -521,7 +551,7 @@ span {
 
 	}
 
-	.blue li {
+	.astro li {
 		display: flex;
 		flex-direction: column;
 
@@ -529,6 +559,75 @@ span {
 }
 
 
+/*breakpoints daily horoscopes*/
+
+@media (min-width: 700px)
+{
+	.daily {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: ".contentdaily .contentdaily .contentdaily" 
+                       ".blokaside  .blokaside   .blokaside";
+}
+}
+
+@media (max-width: 1000px)
+{
+	.daily {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: ".contentdaily .contentdaily .contentdaily" 
+                       ".blokaside  .blokaside   .blokaside";
+}
+}
+
+@media (max-width: 700px){
+	.blokaside{
+		margin-top: 4em;
+		grid-template-rows: auto;
+		display: inline-block;
+		overflow: hidden;
+		
+	}
+}
+
+@media (max-width: 300px){
+	.blokaside{
+		margin-top: 10em;
+		width: 70%;
+	}
+}
+
+
+
+/*@media {
+	.daily section article{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-columns: auto;
+		align-self: flex-end;
+
+	}
+}*/
+
+
+/*@media (min-width: 62.5em){
+	.daily .contentdaily{
+		max-width: 42.5em;
+		display: flex-start;
+
+	}
+}*/
+
+/*@media (min-width: 62.5em){
+	.daily .blokaside{
+		display: flex;
+		flex-direction: column;
+		float: right;
+	}
+}*/
 
 
 

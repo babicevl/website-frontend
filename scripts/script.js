@@ -1,7 +1,7 @@
 // JavaScript Document
 
-var button = document.querySelector('original');
-var hart = document.querySelector('hartje');
+var button = document.querySelector('.original');
+var kloppen = document.querySelector('.hartje');
 let btn = document.querySelector('button');
 let classObj = {
   original: 'large',
@@ -11,14 +11,14 @@ let classObj = {
 // function
 
 function likeButton () {
-	hart.classList.toggle ('original');
+	document.body.classList.toggle ('kloppen');
 }
 
 console.log(button);
 
 // eventlistener
 
-addEventListener('click', likeButton);
+button.addEventListener('click', likeButton);
 	console.log("button is aangeklikt");
 
 
