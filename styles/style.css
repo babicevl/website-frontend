@@ -233,12 +233,13 @@ section .astrolink {
 	font-family: 'avenir', serif;
 	align-items: center;
 	background: #000000;
-	top: 0;
 	bottom: 1.5em;
 	display: flex;
 	height:2.188em;
 	left: 0;
-	position: fixed;
+	position: sticky; 
+	top: 0;
+/*	position: fixed;*/
 	right: 0;
 	z-index: 3;
 	overflow: hidden;
@@ -404,6 +405,7 @@ button:active {
 
 .astro section li {
 	display: flex;
+/*	flex-direction:column;*/
 
 }
 
@@ -412,6 +414,13 @@ button:active {
 	flex-direction: column;
 	flex: 3;
 	padding: 1.25rem;
+}
+
+.astro section ul li img{
+    width: 30vw;
+    object-fit: cover;
+    order: 0;
+}
 }
 
 time {
@@ -423,14 +432,72 @@ time {
 	display: flex;
 }
 
-/*.astro section img {
-	width: 100%;
-	object-fit: cover;
-    min-width: 9.375em;
-    max-width: 15.625em;
-}*/
+
 
 /*daily horoscopes page*/
+
+.dailyheader nav {
+	font-family: 'avenir', serif;
+	align-items: center;
+	background: #000000;
+	top: 0;
+	bottom: 1.5em;
+	display: inline-flex;
+	height:2.188em;
+	left: 0;
+	position: sticky;
+	right: 0;
+	z-index: 2;
+}
+
+.dailyheader nav ul {
+	padding: 1em;
+	padding-top: 0;
+	display: flex;
+	justify-content: center;
+	color: white;
+	width: auto;
+}
+
+.dailyheader ul {
+	font-family: avenir;
+	color: white;
+	font-size: calc(1vw + 1vh + .5vmin);
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.dailyheader nav ul li {
+	font-size: 0.75em;
+	margin: 0.5em;
+	padding-top: 1.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	display: flex;
+	flex: auto;
+}
+
+.dailyheader nav ul span{
+
+	color: white;
+    display: inline-block;
+    margin: 1.3em .5em;
+    opacity: .8;
+}
+
+li .spacer{
+	color: #ffdf02;
+}
+
+/*.blue {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.daily{
+	overflow-x: hidden;
+}
+*/
 .dailyzodiacpic{
 	display: grid;
 }
@@ -450,14 +517,18 @@ time {
     width: 20%;
 }
 
-/*aside{
+.daily p{
+	font-family: 'avenir';
+	text-transform: none;
+	font-size: 1em;
+}
+
+.dailyheaderpic{
+	margin-bottom: 4em;
 	width: 100%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    align-items: right;
-    margin-left:auto; 
-    margin-right:0
-}*/
+}
+
+
 
 
 /*footer home*/
@@ -545,6 +616,7 @@ span {
 @media (min-width: 60em) {
 	.astro section ul {
 		display: grid;
+		order: 0;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		overflow: hidden;
@@ -563,71 +635,33 @@ span {
 
 @media (min-width: 700px)
 {
-	.daily {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: ".contentdaily .contentdaily .contentdaily" 
-                       ".blokaside  .blokaside   .blokaside";
+.daily {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contentdaily {
+        grid-column: span 2;
+    }
+    .blokaside {
+        grid-column: span -1;
+    }
+    .blokaside ul {
+        flex-direction: column;
+    }
 }
-}
-
-@media (max-width: 1000px)
-{
-	.daily {
-  display: grid;
-  grid-gap: .5em;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: ".contentdaily .contentdaily .contentdaily" 
-                       ".blokaside  .blokaside   .blokaside";
-}
-}
-
-@media (max-width: 700px){
-	.blokaside{
-		margin-top: 4em;
-		grid-template-rows: auto;
-		display: inline-block;
-		overflow: hidden;
-		
-	}
-}
-
-@media (max-width: 300px){
-	.blokaside{
-		margin-top: 10em;
-		width: 70%;
-	}
+    .daily section:first-of-type {
+        grid-column: span 2;
+    }
 }
 
 
-
-/*@media {
-	.daily section article{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-columns: auto;
-		align-self: flex-end;
-
-	}
-}*/
-
-
-/*@media (min-width: 62.5em){
-	.daily .contentdaily{
-		max-width: 42.5em;
-		display: flex-start;
-
-	}
-}*/
-
-/*@media (min-width: 62.5em){
-	.daily .blokaside{
+@media (min-width: 62.5em){
+	.daily ul .blokaside{
 		display: flex;
 		flex-direction: column;
-		float: right;
 	}
-}*/
+}
 
 
 
