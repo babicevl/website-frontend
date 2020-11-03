@@ -8,8 +8,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://css-tricks.com/
 2. https://www.w3schools.com/
-3. -...-
+3. Studentassistenten Kris & Sam
+4. Klasgenoten Marlene, Anousha en First
 
+
+## Eindgesprek (week 9)
+
+In de herkansing heb ik de feedback verwerkt die ik ontving. Ik heb ook de navbar aangepast omdat ik daar vorige keer geen tijd meer voor had.
+Met een aantal dingen had ik hulp nodig van klasgenoten en studentassistenten. Daarnaast heb ik zelf nog veel geleerd. 
+
+**Screenshot(s):**
+![broadly](images/navscreen.png) 
+![broadly](images/videoscreen.png)
+![broadly](images/footerscreen.png)
+![broadly](images/extrascreen.png)
+
+
+
+### Verslag van meeting
+
+Microanimatie roept verkeerde elementen op
+Niet divers
+Horizontaal scrollbaar
+alt tags img
 
 
 ## Eindgesprek (week 7/8)
