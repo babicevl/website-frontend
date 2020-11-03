@@ -41,6 +41,7 @@ div {
 	right: 0em;
 	z-index: 2;
 	overflow: hidden;
+	width: 100%;
 }
 
 .home nav ul {
@@ -50,6 +51,7 @@ div {
 	justify-content: center;
 	color: white;
 	width: auto;
+	width: 100%;
 }
 
 .home ul {
@@ -69,6 +71,7 @@ div {
 	padding-right: 0.5em;
 	display: flex;
 	flex: auto;
+	width: 100%;
 }
 
 .home nav ul span{
@@ -77,10 +80,24 @@ div {
     display: inline-block;
     margin: 1.3em .5em;
     opacity: .8;
+    width: 100%;
 }
 
 li .spacer{
 	color: #ffdf02;
+	width: 100%;
+}
+
+.logo{
+	left: 0;
+	right: 5em;
+	margin-right: 4rem;
+	width: 100%;
+}
+
+.socials{
+	margin-left: 2rem;
+	width: 100%;
 }
 
 /*link en states*/
@@ -218,6 +235,44 @@ section .astrolink {
     width: 50%;
     overflow: hidden;
 }
+
+
+/*video broadly*/
+.home h3 {
+	color: white;
+	font-size: 2em;
+	font-family: bely-display, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	margin-bottom: 0.75em;
+}
+
+section .broadlyvideo{
+	align-content: center !important; 
+	width: 100%;
+	margin:2em;
+
+}
+
+/*footer home*/
+
+  .footersection{
+      width: 100%;
+      border-top: 1em solid #4181DF; 
+  }
+
+  .footernav nav{
+  	display: flex;
+  	bottom: 0;
+  	position: absolute;
+  	background-color: #333;
+ 	overflow: hidden;
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  }
+
 
 
 /*horoscopes page*/
@@ -377,15 +432,16 @@ button:active {
 .blue h2 {
 	font-family:  "Helvetica Neue";
 	color: black;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 900;
 	text-align: left;
+	margin-top: .2rem;
 }
 
 .blue p {
 	font-family: 'Monaco', monospace;
 	color: black;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	text-align: left;
 	margin: 0;
 	text-transform: uppercase;
@@ -423,18 +479,23 @@ button:active {
 }
 }
 
-time {
+time{
+	margin: 0;	
 	font-family: 'Monaco', monospace;
 	color: black;
-	font-size: 0.7rem;
-	margin-top: 0.6rem;
-	margin-bottom: 0.6rem;
-	display: flex;
+	font-size: 0.7em;
+	text-align: left;
+}
+
+.linkdaily:hover{
+	opacity: .5;
+	text-decoration: none;
 }
 
 
-
 /*daily horoscopes page*/
+
+/*nav*/
 
 .dailyheader nav {
 	font-family: 'avenir', serif;
@@ -443,11 +504,12 @@ time {
 	top: 0;
 	bottom: 1.5em;
 	display: inline-flex;
-	height:2.188em;
+	height:3em;
 	left: 0;
 	position: sticky;
 	right: 0;
 	z-index: 2;
+	width: 100%;
 }
 
 .dailyheader nav ul {
@@ -479,7 +541,6 @@ time {
 }
 
 .dailyheader nav ul span{
-
 	color: white;
     display: inline-block;
     margin: 1.3em .5em;
@@ -490,58 +551,135 @@ li .spacer{
 	color: #ffdf02;
 }
 
-/*.blue {
-	overflow-x: hidden;
-	overflow-y: scroll;
+
+/*article*/
+.dailyheaderpic{
+	margin-bottom: 4em;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 100%;
 }
-.daily{
-	overflow-x: hidden;
-}
-*/
-.dailyzodiacpic{
-	display: grid;
-}
+
 
 .contentdaily {
 	grid-area: .contentdaily;
 	display: grid;
 }
 
-.blockaside{
-	grid-area: .blokaside;
-	padding-bottom: 80px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    display: none;
-    padding-left: 40px;
-    padding-right: 0;
-    width: 20%;
+.contentdaily time{
+	margin: 1em 0 1em 2.5em;	
+	font-family: 'Monaco', monospace;
+	color: black;
+	font-size: 0.7em;
+	text-align: left;
+	display: flex;
 }
 
 .daily p{
 	font-family: 'avenir';
 	text-transform: none;
 	font-size: 1em;
+	margin-left: 2em;
 }
 
-.dailyheaderpic{
-	margin-bottom: 4em;
-	width: 100%;
+.daily h1{
+	text-align: left;
+	margin-left: 1em;
+	font-weight: 800;
+	font-size: 2.5em;
+}
+
+blockquote{
+	font-family: 'avenir';
+	text-align: left;
+	margin: 0 0 0 2.5em;
+}
+
+.dailydivider{
+    border-top: .1em solid rgba(0,0,0,.2);
+    margin-right: 5em;
+    height: .5em;
+    margin: 3em 0 0 2em;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.daily h2{
+	font-family: 'avenir';
+	margin-left: 2.5em;
+}
+
+/*aries*/
+.daily h3{
+	font-family: 'avenir';
+	text-align: left;
+	margin-left: 1em;
+	font-size: 2em;
+}
+
+.zodiacspacer{
+	margin: 2em 0 1em 0;
+}
+
+
+/*suggestie blokken*/
+.blockaside{
+	margin-top: 5em;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 20%;
+    margin-right: 2em;
+}
+
+.dailyzodiacpic{
+	display: grid;
+}
+
+.daily li{
+	margin-bottom: 1em;
+}
+
+.blokaside h1{
+	margin-top: 8em;
+	margin-left: 0;
+	text-align: left;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.blokaside p{
+	font-family: 'Monaco', monospace;
+	color: black;
+	font-size: 0.7rem;
+	text-align: left;
+	margin-top: .5em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.blokaside h2{
+	font-family:  "Helvetica Neue";
+	color: black;
+	font-size: 1rem;
+	margin-top: .5em;
+	font-weight: 900;
+	text-align: left;
+	margin:0;	
+}
+
+.blokaside time{
+	margin: 0;	
+	font-family: 'Monaco', monospace;
+	color: black;
+	font-size: 0.7em;
+	text-align: left;
+	display: flex;
 }
 
 
 
 
-/*footer home*/
 
-  footer nav {
-      display: inline-block;
-      width: 100%;
-      background-color: #035eda;
-      border-top: 1em solid #4181DF; 
-      padding: 3em;
-      justify-content: center;
-
-  }
 
 
 /*breakpoints broadly*/
@@ -600,8 +738,33 @@ span {
 		display: grid;
 		grid-column: span 1;
 	}
+
 }
 
+@media (min-width: 45em){
+	main > section:nth-of-type(12) {
+		display: grid;
+		grid-column: span 2;
+	}	
+
+	@media (min-width: 0em){
+	main > section:nth-of-type(12) {
+		margin-right: 2em;
+	}	
+}
+
+@media (min-width: 0em){
+.footernav {
+    display: flex;
+    bottom: 0;
+    background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+}
 
 /*breakpoints astrology*/
 
@@ -633,15 +796,16 @@ span {
 
 /*breakpoints daily horoscopes*/
 
-@media (min-width: 700px)
+@media (min-width: 45em)
 {
 .daily {
         display: grid;
-        grid-gap: 10px;
+        margin-right: 2em;
+        grid-gap: 3em;
         grid-template-columns: repeat(4, 1fr);
     }
     .contentdaily {
-        grid-column: span 2;
+        grid-column: span 3;
     }
     .blokaside {
         grid-column: span -1;
@@ -651,7 +815,7 @@ span {
     }
 }
     .daily section:first-of-type {
-        grid-column: span 2;
+        grid-column: span 3;
     }
 }
 
