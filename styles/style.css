@@ -1,5 +1,6 @@
 /* CSS Document */
 
+
 *,
 *::after,
 *::before {
@@ -41,17 +42,15 @@ div {
 	right: 0em;
 	z-index: 2;
 	overflow: hidden;
-	width: 100%;
 }
 
 .home nav ul {
-	padding: 1em;
+	padding: 0;
 	padding-top: 0;
 	display: flex;
 	justify-content: center;
 	color: white;
 	width: auto;
-	width: 100%;
 }
 
 .home ul {
@@ -67,11 +66,8 @@ div {
 	font-size: 0.75em;
 	margin: 0.5em;
 	padding-top: 1.5em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
 	display: flex;
 	flex: auto;
-	width: 100%;
 }
 
 .home nav ul span{
@@ -80,25 +76,15 @@ div {
     display: inline-block;
     margin: 1.3em .5em;
     opacity: .8;
-    width: 100%;
 }
 
 li .spacer{
 	color: #ffdf02;
-	width: 100%;
 }
 
-.logo{
-	left: 0;
-	right: 5em;
-	margin-right: 4rem;
-	width: 100%;
-}
 
-.socials{
-	margin-left: 2rem;
-	width: 100%;
-}
+
+
 
 /*link en states*/
 
@@ -250,29 +236,34 @@ section .astrolink {
 
 section .broadlyvideo{
 	align-content: center !important; 
-	width: 100%;
+	width: 80%;
 	margin:2em;
 
 }
 
 /*footer home*/
+footer{
+	background-color: #4181DF;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
 
-  .footersection{
-      width: 100%;
-      border-top: 1em solid #4181DF; 
-  }
+footer ul li{
+	font-family: "avenir"
+	font-size: 3em;
+	margin-left: 1.5em;
+	list-style: none;
+	font-weight: normal;
 
-  .footernav nav{
-  	display: flex;
-  	bottom: 0;
-  	position: absolute;
-  	background-color: #333;
- 	overflow: hidden;
-  	position: fixed;
-  	bottom: 0;
-  	width: 100%;
-  }
+}
 
+footer p {
+	border-bottom: .2em solid #035eda
+}
+
+footer a{
+	font-size: .8em;
+}
 
 
 /*horoscopes page*/
@@ -280,6 +271,16 @@ section .broadlyvideo{
 .blue {
 	background-color: white;
 	overflow-x: hidden;
+}
+
+.blue time {
+    margin: 0;	
+	font-family: 'Monaco', monospace;
+	color: black;
+	font-size: 0.7em;
+	text-align: left;
+	margin-top: .5em;
+	margin-bottom: .5em;
 }
 
 /*nav horoscopes*/
@@ -306,7 +307,6 @@ section .broadlyvideo{
 	display: flex;
 	justify-content: center;
 	width: auto;
-	overflow: hidden;
 }
 
 .blue ul {
@@ -324,22 +324,25 @@ section .broadlyvideo{
 	font-size: .75em;
 	margin: .5em;
 	padding-top: 1.5em;
-	padding-left: .5em;
-	padding-right: .5em;
 	overflow: hidden;
 	display: flex;
 	flex: auto;
 }
 
-.blue li {
-	list-style-type: none;
-	border-bottom: 0.100em solid rgba(0, 0, 0, 0.1);
-	border-top: 0.100em solid rgba(0, 0, 0, 0.1);
-	border-right: 0.100em solid rgba(0, 0, 0, 0.1);
-	border-left: 0.100em solid rgba(0, 0, 0, 0.1);
-	width: 100%;
-	overflow: hidden;
+
+.blue nav ul span{
+
+	color: white;
+    display: inline-block;
+    margin: 1.3em .5em;
+    opacity: .5;
 }
+
+
+.blue li .spacer{
+	color: #ffdf02;
+}
+
 
 /*header horoscopes*/
 
@@ -378,7 +381,6 @@ button {
 }
 
 .hartje{
-	float: right;
 	border-radius;
     padding: 1em;
     width: 4em;
@@ -457,6 +459,15 @@ button:active {
 	flex-wrap: wrap;
 }
 
+.astro li {
+	list-style-type: none;
+	border-bottom: 0.100em solid rgba(0, 0, 0, 0.1);
+	border-top: 0.100em solid rgba(0, 0, 0, 0.1);
+	border-right: 0.100em solid rgba(0, 0, 0, 0.1);
+	border-left: 0.100em solid rgba(0, 0, 0, 0.1);
+	width: 100%;
+	overflow: hidden;
+}
 
 
 .astro section li {
@@ -477,21 +488,31 @@ button:active {
     object-fit: cover;
     order: 0;
 }
-}
 
-time{
-	margin: 0;	
-	font-family: 'Monaco', monospace;
-	color: black;
-	font-size: 0.7em;
-	text-align: left;
-}
 
 .linkdaily:hover{
 	opacity: .5;
 	text-decoration: none;
 }
 
+
+.horoscope{
+	background-color: rgba(0,0,0,.3);
+	padding:3rem;
+}
+
+.horoscope p{
+	color: white;
+	border-bottom: .2em solid rgba(0,0,0,.3)
+}
+
+.horoscope ul li{
+	margin-top: 2em;
+}
+
+.horoscope a{
+	font-size: .8em;
+}
 
 /*daily horoscopes page*/
 
@@ -745,6 +766,7 @@ span {
 	main > section:nth-of-type(12) {
 		display: grid;
 		grid-column: span 2;
+		align-content: center;
 	}	
 
 	@media (min-width: 0em){
@@ -753,20 +775,32 @@ span {
 	}	
 }
 
-@media (min-width: 0em){
-.footernav {
-    display: flex;
-    bottom: 0;
-    background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 
-}
-}
 
 /*breakpoints astrology*/
+
+@media (min-width: 0em){
+.blue nav {
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(3,94,218,0) 100%);
+    bottom: auto;
+    box-shadow: none;
+    height: auto;
+    padding: 0 1.25em;
+    top: 0;
+    position: fixed;
+}
+
+@media{
+.blue span {
+    display: inline-block;
+    margin-top: 1.3em;
+    bottom: 0;
+}
+
+}
+
+
+
 
 @media (min-width:45em){
 .astroheader {
@@ -776,6 +810,7 @@ span {
 	overflow: hidden;
 }
 }
+
 @media (min-width: 60em) {
 	.astro section ul {
 		display: grid;
